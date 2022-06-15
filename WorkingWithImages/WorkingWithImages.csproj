@@ -13,6 +13,5 @@
   <ItemGroup>
 	<PackageReference Include="SixLabors.ImageSharp" Version="1.0.3" />
   </ItemGroup>
-  </ItemGroup>
 
 </Project>

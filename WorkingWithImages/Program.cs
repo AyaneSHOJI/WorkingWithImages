@@ -4,6 +4,7 @@ using static System.Console;
 
 
 string imagesFolder = Path.Combine(Environment.CurrentDirectory, "../../../images");
+string imagesFolder2 = Path.Combine(, "../../../images");
 
 IEnumerable<string> images = Directory.EnumerateFiles(imagesFolder);
 

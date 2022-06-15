@@ -1,0 +1,14 @@
+﻿C# - Environment.CurrentDirectory path goes to bin folder
+
+I'm working with images and I want to get the path to the current directory. The expected path is something like "C:\Users\...\WorkingWithImages(my project name)", but it goes to "C:\Users\...\WorkingWithImages\bin\Debug\net6.0".
+
+First of all, as it is recommended, I put "Copy if newer" in Copy to Output Directory of Program file properties.
+
+Then, I used other methods 
+System.IO.Directory.GetCurrentDirectory() (Current directory)
+AppDomain.CurrentDomain.BaseDirectory
+but they returned the same result
+
+I finally gave up and manually set the current directory with Directory.SetCurrentDirectory() and it worked.
+But I wonder if this is a good solution.
+The same thing is happening in my other project, so it's from my general settings? 

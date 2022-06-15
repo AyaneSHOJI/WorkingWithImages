@@ -2,9 +2,11 @@
 using SixLabors.ImageSharp.Processing;
 using static System.Console;
 
-
-string imagesFolder = Path.Combine(Environment.CurrentDirectory, "../../../images");
-string imagesFolder2 = Path.Combine(, "../../../images");
+//string dir = @"C:\Users\Ayane\Repo\cs10net6chapter08\WorkingWithImages\WorkingWithImages\";
+//Directory.SetCurrentDirectory(dir);
+string imagesFolder = Path.Combine(Environment.CurrentDirectory, "images");
+//string imagesFolder2 = Path.Combine( "../../../images");
+string path = AppDomain.CurrentDomain.BaseDirectory;
 
 IEnumerable<string> images = Directory.EnumerateFiles(imagesFolder);
 
